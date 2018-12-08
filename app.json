@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "webview-sreeram-app",
-    "description": "www.sreeram.app",
-    "slug": "webview-sreeram-app",
+    "name": "webview-test-londonz-app",
+    "description": "www.test.londonz.app",
+    "slug": "webview-test-londonz-app",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
