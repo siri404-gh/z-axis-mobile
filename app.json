@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "webview-test-londonz-app",
-    "description": "www.test.londonz.app",
-    "slug": "webview-test-londonz-app",
+    "name": "test-londonz-app",
+    "description": "test.londonz.app",
+    "slug": "test-londonz-app",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
@@ -14,7 +14,7 @@
     "icon": "./src/mobile/assets/logo-512.png",
     "splash": {
       "image": "./src/mobile/assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
