@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1052545227182",
+    "firebase_url": "https://londonz-stage.firebaseio.com",
+    "project_id": "londonz-stage",
+    "storage_bucket": "londonz-stage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052545227182:android:08bf987482bb5c2f",
+        "android_client_info": {
+          "package_name": "com.londonz.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052545227182-s3lk1idbt29no9k4du0gtfh3g4vbmarg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy-nVaJbBC4k-s47nYSu3E-ef9SXq9wJU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
