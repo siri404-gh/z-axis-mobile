@@ -36,20 +36,27 @@ class WebviewSite extends Component {
             })
             .catch(e => console.log('error', e));
     }
+    componentWillReceiveProps(nextProps) {
+      if(nextProps && nextProps.refresh === false) this.WebViewRef.reload();
+    }
+    renderLoading() {
+      return null;
+    }
     render() {
         return <WebView
-            ref={'webview'}
-            userAgent={"londonz"}
+        ref={n => this.WebViewRef = n}
+        userAgent={"londonz"}
             // onLoadStart={() => setTimeout(this.showAds, 1*60*1000)}
             javaScriptEnabled={true}
             domStorageEnabled={true}
             injectedJavaScript={`window.token='${this.state.token}'`}
-            startInLoadingState={false}
+            startInLoadingState={true}
+            renderLoading={this.renderLoading}
             scrollEnabled={false}
             bounce={false}
             useWebKit={true}
             source={{ uri: 'https://test.londonz.app' }}
-            style={{ flex: 1, height: '100%' }} />;
+            style={{ height: '100%' }} />;
     }
 }
 

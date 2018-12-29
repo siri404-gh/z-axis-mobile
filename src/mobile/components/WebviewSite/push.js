@@ -8,7 +8,6 @@ export const registerForPushNotificationsAsync = async () => {
         const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
         finalStatus = status;
     }
-    console.log('finalstatus', finalStatus);
     if (finalStatus !== 'granted') return;
     let token;
     try {
