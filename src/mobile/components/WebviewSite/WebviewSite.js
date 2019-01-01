@@ -2,21 +2,6 @@ import React, { Component } from 'react';
 import { WebView } from 'react-native';
 import { registerForPushNotificationsAsync } from './push';
 
-// import {
-//   AdMobBanner,
-//   AdMobInterstitial,
-// } from 'expo';
-
-// Test ads
-// let bannerPubID = "ca-app-pub-3940256099942544/2934735716";
-// let interstitialPubID = "ca-app-pub-3940256099942544/4411468910";
-
-// My ads
-// let bannerPubID = "ca-app-pub-6831276331714408/9053954679";
-// let interstitialPubID = "ca-app-pub-6831276331714408/1135882305";
-
-// const pubID = interstitialPubID;
-
 class WebviewSite extends Component {
     // componentDidMount() {
     //   AdMobInterstitial.setAdUnitID(pubID);
@@ -44,19 +29,19 @@ class WebviewSite extends Component {
     }
     render() {
         return <WebView
-        ref={n => this.WebViewRef = n}
-        userAgent={"londonz"}
-            // onLoadStart={() => setTimeout(this.showAds, 1*60*1000)}
-            javaScriptEnabled={true}
-            domStorageEnabled={true}
-            injectedJavaScript={`window.token='${this.state.token}'`}
-            startInLoadingState={true}
-            renderLoading={this.renderLoading}
-            scrollEnabled={false}
-            bounce={false}
-            useWebKit={true}
-            source={{ uri: 'https://test.londonz.app' }}
-            style={{ height: '100%' }} />;
+          ref={n => this.WebViewRef = n}
+          userAgent={"londonz"}
+          // onLoadStart={() => setTimeout(this.showAds, 1*60*1000)}
+          javaScriptEnabled={true}
+          domStorageEnabled={true}
+          injectedJavaScript={`window.token='${this.state.token}'`}
+          startInLoadingState={true}
+          renderLoading={this.renderLoading}
+          scrollEnabled={false}
+          bounce={false}
+          useWebKit={true}
+          source={{ uri: 'https://test.londonz.app' }}
+          style={{ height: '100%', marginBottom: 42, }} />;
     }
 }
 
