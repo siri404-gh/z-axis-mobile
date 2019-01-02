@@ -3,8 +3,8 @@ import { ScrollView, View, StatusBar, RefreshControl } from 'react-native';
 import WebviewSite from './src/mobile/components/WebviewSite/WebviewSite';
 import { AdMobBanner, AdMobInterstitial } from 'expo';
 
-const { ad: { showBanner, showInterstitial, test, prod } } = require('./config/variables');
-const { banner, interstitial } = prod;
+const { ad: { showBanner, showInterstitial, test, production } } = require('./config/variables');
+const { banner, interstitial } = production;
 
 const BannerAd = ({ }) => <AdMobBanner
   style={{ position: "absolute", bottom: 0 }}
