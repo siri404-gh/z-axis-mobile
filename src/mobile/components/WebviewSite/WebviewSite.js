@@ -3,14 +3,6 @@ import { WebView } from 'react-native';
 import { registerForPushNotificationsAsync } from './push';
 
 class WebviewSite extends Component {
-    // componentDidMount() {
-    //   AdMobInterstitial.setAdUnitID(pubID);
-    //   AdMobInterstitial.setTestDeviceID("EMULATOR");
-    // }
-    // async showAds() {
-    //   await AdMobInterstitial.requestAdAsync();
-    //   await AdMobInterstitial.showAdAsync();
-    // }
     state = {
         token: '',
     }
@@ -41,7 +33,7 @@ class WebviewSite extends Component {
           bounce={false}
           useWebKit={true}
           source={{ uri: 'https://test.londonz.app' }}
-          style={{ height: '100%', marginBottom: 42, }} />;
+          style={{ height: '100%', }} />;
     }
 }
 
