@@ -32,7 +32,7 @@ class WebviewSite extends Component {
           scrollEnabled={false}
           bounce={false}
           useWebKit={true}
-          source={{ uri: 'https://test.londonz.app' }}
+          source={{ uri: `https://test.londonz.app?time=${new Date().getTime()}` }}
           style={{ height: '100%', }} />;
     }
 }

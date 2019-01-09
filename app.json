@@ -8,7 +8,7 @@
     "platforms": [
       "android"
     ],
-    "version": "4.0.0",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/mobile/assets/logo-512.png",
     "splash": {
@@ -23,9 +23,9 @@
       "**/*"
     ],
     "android": {
-      "package": "com.londonz.app",
+      "package": "com.zaxis.app",
       "permissions": [],
-      "versionCode": 4,
+      "versionCode": 1,
       "googleServicesFile": "./google-services.json"
     },
     "notification": {

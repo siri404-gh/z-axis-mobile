@@ -5,7 +5,7 @@ import { AdMobBanner, AdMobInterstitial } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
 
 const { ad: { showBanner, showInterstitial, test, production } } = require('./config/variables');
-const { banner, interstitial } = test;
+const { banner, interstitial } = production;
 
 const BannerAd = ({ }) => <AdMobBanner
   style={{ position: "absolute", bottom: 0 }}
@@ -55,7 +55,7 @@ export default class App extends Component {
       contentContainerStyle={{ flex: 1, paddingTop: 30, backgroundColor: this.state.refreshing ? '#ffffff' : '#000000' }}
       refreshControl={<RefreshControl refreshing={this.state.refreshing} onRefresh={this._onRefresh} title={'Loading'} />}>
       <StatusBar barStyle="light-content" />
-      {this.getRefresh()}
+      {/* {this.getRefresh()} */}
       <WebviewSite refresh={this.state.refreshing} />
       {showBanner && <BannerAd />}
     </ScrollView>;
