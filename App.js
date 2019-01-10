@@ -29,7 +29,7 @@ export default class App extends Component {
     await AdMobInterstitial.showAdAsync();
   }
   _onRefresh = () => {
-    setTimeout(this.showAds, 100);
+    setTimeout(this.showAds, 0);
     this.setState({ refreshing: true });
     this.setState({ refreshing: false });
   }
@@ -38,7 +38,7 @@ export default class App extends Component {
       contentContainerStyle={{ flex: 1, paddingTop: 30, backgroundColor: this.state.refreshing ? '#ffffff' : '#000000' }}
       refreshControl={<RefreshControl refreshing={this.state.refreshing} onRefresh={this._onRefresh} title={'Loading'} />}>
       <StatusBar barStyle="light-content" />
-      <WebviewSite refresh={this.state.refreshing} />
+      <WebviewSite refresh={this.state.refreshing} marginBottom={showBanner ? 44 : 0}/>
       {showBanner && <BannerAd />}
     </ScrollView>;
   }

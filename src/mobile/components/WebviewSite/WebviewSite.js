@@ -33,7 +33,7 @@ class WebviewSite extends Component {
           bounce={false}
           useWebKit={true}
           source={{ uri: 'https://test.londonz.app' }}
-          style={{ height: '100%', }} />;
+          style={{ height: '100%', marginBottom: this.props.marginBottom }} />;
     }
 }
 
