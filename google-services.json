@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "678457608702",
+    "firebase_url": "https://londonz-prod.firebaseio.com",
+    "project_id": "londonz-prod",
+    "storage_bucket": "londonz-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678457608702:android:6a417ec05943256d",
+        "android_client_info": {
+          "package_name": "com.zaxis.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678457608702-tko0eefl9fphai9q5i9mpe1r4vcv8f4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN7cEc7maezcGD0Tc9qTkAr4iQgw03CUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
