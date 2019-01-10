@@ -30,7 +30,7 @@ export default class App extends Component {
     await AdMobInterstitial.showAdAsync();
   }
   _onRefresh = () => {
-    setTimeout(this.showAds, 100);
+    // setTimeout(this.showAds, 100);
     this.setState({ refreshing: true });
     this.setState({ refreshing: false });
   }

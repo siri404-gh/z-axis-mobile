@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Z-Axis",
+    "name": "Z-Axis Pro",
     "description": "Online Treasure Hunt",
-    "slug": "londonz",
+    "slug": "zaxispro",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
@@ -25,8 +25,7 @@
     "android": {
       "package": "com.zaxis.app",
       "permissions": [],
-      "versionCode": 1,
-      "googleServicesFile": "./google-services.json"
+      "versionCode": 1
     },
     "notification": {
       "icon": "./src/mobile/assets/icon.png",
