@@ -29,7 +29,7 @@ class WebviewSite extends Component {
           injectedJavaScript={`window.token='${this.state.token}'`}
           startInLoadingState={true}
           renderLoading={this.renderLoading}
-          scrollEnabled={false}
+          scrollEnabled={true}
           bounce={false}
           useWebKit={true}
           source={{ uri: 'https://test.londonz.app' }}
