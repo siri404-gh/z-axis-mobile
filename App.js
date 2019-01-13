@@ -35,7 +35,8 @@ export default class App extends Component {
   }
   render() {
     return <ScrollView
-      contentContainerStyle={{ flex: 1, paddingTop: 30, backgroundColor: this.state.refreshing ? '#ffffff' : '#000000' }}
+      contentContainerStyle={{ flex: 1, paddingTop: 30, backgroundColor: '#000000' }}
+      scrollEnabled={false}
       refreshControl={<RefreshControl refreshing={this.state.refreshing} onRefresh={this._onRefresh} title={'Loading'} />}>
       <StatusBar barStyle="light-content" />
       <WebviewSite refresh={this.state.refreshing} marginBottom={showBanner ? 44 : 0}/>
