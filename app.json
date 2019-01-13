@@ -2,7 +2,7 @@
   "expo": {
     "name": "Z-Axis",
     "description": "Online Treasure Hunt",
-    "slug": "londonz",
+    "slug": "zaxis",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
@@ -14,7 +14,7 @@
     "splash": {
       "image": "./src/mobile/assets/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#090909"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
