@@ -23,7 +23,6 @@ class WebviewSite extends Component {
         return <WebView
           ref={n => this.WebViewRef = n}
           userAgent={"londonz"}
-          // onLoadStart={() => setTimeout(this.showAds, 1*60*1000)}
           javaScriptEnabled={true}
           domStorageEnabled={true}
           injectedJavaScript={`window.token='${this.state.token}'`}
