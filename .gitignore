@@ -6,3 +6,6 @@ npm-debug.*
 *.key
 *.mobileprovision
 google-services.json
+*.keystore
+*.pem
+.DS_STORE

@@ -19,7 +19,7 @@ export default class App extends Component {
   }
 
   async showAds() {
-    if(!showInterstitial) return;
+    if (!showInterstitial) return;
     AdMobInterstitial.setAdUnitID(interstitial);
     AdMobInterstitial.setTestDeviceID("EMULATOR");
     await AdMobInterstitial.requestAdAsync();
@@ -44,7 +44,7 @@ export default class App extends Component {
       bounces={false}
       refreshControl={this.getRefreshControl()}>
       <StatusBar barStyle="light-content" />
-      <WebviewSite refresh={this.state.refreshing} marginBottom={showBanner ? 44 : 0}/>
+      <WebviewSite refresh={this.state.refreshing} marginBottom={showBanner ? 44 : 0} />
       <BannerAd />
     </ScrollView>;
   }
