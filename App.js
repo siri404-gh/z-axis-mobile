@@ -33,7 +33,7 @@ export default class App extends Component {
   }
 
   getRefreshControl() {
-    // return null;
+    return null;
     return <RefreshControl refreshing={this.state.refreshing} onRefresh={this._onRefresh} title={'Loading'} />;
   }
 
