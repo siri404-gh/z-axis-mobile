@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { WebView } from 'react-native';
+import { View, WebView } from 'react-native';
 import { registerForPushNotificationsAsync } from './push';
 
 class WebviewSite extends Component {
@@ -32,6 +32,7 @@ class WebviewSite extends Component {
       bounce={false}
       useWebKit={true}
       source={{ uri: 'https://test.londonz.app' }}
+      // source={{ uri: 'https://londonz-stage.firebaseapp.com' }}
       style={{ height: '100%', marginBottom: this.props.marginBottom }} />;
   }
 }

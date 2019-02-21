@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View, StatusBar, RefreshControl } from 'react-native';
+import { ScrollView, View, StatusBar, RefreshControl, KeyboardAvoidingView } from 'react-native';
 import WebviewSite from './src/mobile/components/WebviewSite/WebviewSite';
 import { AdMobBanner, AdMobInterstitial } from 'expo';
 
@@ -27,20 +27,20 @@ export default class App extends Component {
   }
 
   _onRefresh = () => {
-    setTimeout(this.showAds, 0);
+    // setTimeout(this.showAds, 0);
     this.setState({ refreshing: true });
     this.setState({ refreshing: false });
   }
 
   getRefreshControl() {
-    return null;
+    // return null;
     return <RefreshControl refreshing={this.state.refreshing} onRefresh={this._onRefresh} title={'Loading'} />;
   }
 
   render() {
     return <ScrollView
       contentContainerStyle={{ flex: 1, paddingTop: 30, backgroundColor: '#000000' }}
-      scrollEnabled={false}
+      scrollEnabled={true}
       bounces={false}
       refreshControl={this.getRefreshControl()}>
       <StatusBar barStyle="light-content" />
