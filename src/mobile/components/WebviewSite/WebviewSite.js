@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { WebView, ActivityIndicator } from 'react-native';
+import { View, WebView, ActivityIndicator } from 'react-native';
 import { registerForPushNotificationsAsync } from './push';
 
 const url = 'https://test.londonz.app'
@@ -18,12 +18,12 @@ export default class App extends Component {
   }
 
   renderLoading() {
-    return <ActivityIndicator style={{ height: '100%', backgroundColor: '#000000' }} size="large" color="#0000ff" hidesWhenStopped={false} />
+    return <ActivityIndicator style={{ height: '100%', backgroundColor: '#000000' }} size="large" color="#0000ff" />;
   }
 
   render() {
     return (
-        <WebView
+      <WebView
         ref={n => this.WebViewRef = n}
         userAgent={"Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"}
         javaScriptEnabled={true}
@@ -35,7 +35,7 @@ export default class App extends Component {
         bounce={false}
         useWebKit={true}
         source={{ uri: url }}
-        style={{ height: '100%', background: '#000000' }} />
+        style={{ height: '100%', marginTop: 30, backgroundColor: '#000000' }} />
     );
   }
 }

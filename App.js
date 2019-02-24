@@ -15,8 +15,7 @@ const BannerAd = ({ }) => showBanner ? <AdMobBanner
 
 export default class App extends Component {
   render() {
-    return <View
-      style={{ flex: 1, backgroundColor: '#000000' }}>
+    return <View style={{ flex: 1, backgroundColor: '#000000' }}>
       <StatusBar barStyle="light-content" />
       <WebviewSite />
     </View>;
