@@ -18,7 +18,7 @@ export default class App extends Component {
   }
 
   renderLoading() {
-    return <ActivityIndicator style={{ height: '100%', backgroundColor: '#000000' }} size="large" color="#0000ff" />;
+    return <ActivityIndicator style={{ height: '100%', backgroundColor: '#000000' }} size="large" color="#0000ff" hidesWhenStopped={false} />;
   }
 
   render() {
@@ -35,7 +35,7 @@ export default class App extends Component {
         bounce={false}
         useWebKit={true}
         source={{ uri: url }}
-        style={{ height: '100%', marginTop: 30, backgroundColor: '#000000' }} />
+        style={{ height: '100%', marginTop: 30, backgroundColor: '#ffffff' }} />
     );
   }
 }
