@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { View, WebView, ActivityIndicator } from 'react-native';
 import { registerForPushNotificationsAsync } from './push';
 
-const url = 'https://test.londonz.app'
+const uri = 'https://z-axis.web.app'
 
 export default class App extends Component {
   state = {
     token: '',
+    background: '#000'
   }
 
   componentDidMount() {
@@ -15,6 +16,12 @@ export default class App extends Component {
         this.setState({ token: d });
       })
       .catch(e => console.log('error', e));
+
+      setTimeout(() => {
+        this.setState({
+          background: '#fff',
+        });
+      }, 5000);
   }
 
   renderLoading() {
@@ -34,8 +41,8 @@ export default class App extends Component {
         renderLoading={this.renderLoading}
         bounce={false}
         useWebKit={true}
-        source={{ uri: url }}
-        style={{ height: '100%', marginTop: 30, backgroundColor: '#ffffff' }} />
+        source={{uri}}
+        style={{ height: '100%', marginTop: 30, backgroundColor: this.state.background }} />
     );
   }
 }
